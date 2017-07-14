@@ -24,4 +24,4 @@ int main(void){
 
 ```
 
-![Example](https://github.com/turtles4all/cprintf/cprintf-example.png)
+![Example](https://github.com/turtles4all/cprintf/blob/master/cprintf-example.png)
