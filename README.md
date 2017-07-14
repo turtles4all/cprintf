@@ -7,13 +7,21 @@ cprinf will automaticly reset color markings for the terminal after output has b
 
 Usage:
 
+```c
 #include "cprintf.h"
 
-int main(void)
-{
-  int number = 42;
-  cprintf("%sRed int %d %s%sYello text", RED, number, COLOR_RESET, YELLOW);
-  retun 0;
+int main(void){
+	
+	int number = 42;
+	
+	cprintf("%s%sRED INT:%d %sNORMAL AGAIN%sGREEN%s%sYELLOW INVERTED\n", 
+	FM_INVERT, RED, number, COLOR_RESET, GREEN, FM_INVERT, LIGHT_YELLOW);
+	
+	printf("Normal Print");
+	
+	return 0;
 }
 
-Make sure to link to cprintf.o
+```
+
+![Example](https://github.com/turtles4all/cprintf/example-output.png)
