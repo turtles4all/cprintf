@@ -6,7 +6,7 @@
 #define _CPRINTF_H
 
 //RESET:
-#define COLOR_RESET	"\x1b[0m"
+#define COLOR_RESET			"\x1b[0m"
 
 //FORMATS:
 #define FM_BOLD				"\x1b[1m"
