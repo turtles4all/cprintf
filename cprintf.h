@@ -1,10 +1,19 @@
-#ifndef _CPRINTF_H
-#define _CPRINTF_H
 #include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
 
+#ifndef _CPRINTF_H
+#define _CPRINTF_H
+
+//RESET:
 #define COLOR_RESET	"\x1b[0m"
+
+//FORMATS:
+#define FM_BOLD				"\x1b[1m"
+#define FM_BLINK			"\x1b[5m"
+#define FM_UNDERLINE		"\x1b[4m"
+#define FM_INVERT			"\x1b[7m"
+#define FM_LINE_THROUGH     "\x1b[9m"
 
 //TEXT COLORS:
 #define BLACK				"\x1b[30m"
@@ -15,7 +24,6 @@
 #define MAGENTA				"\x1b[35m"
 #define CYAN				"\x1b[36m"
 #define WHITE				"\x1b[37m"
-
 #define LIGHT_RED			"\x1b[91m"
 #define LIGHT_GREEN			"\x1b[92m"
 #define LIGHT_YELLOW		"\x1b[93m"
@@ -24,15 +32,7 @@
 #define LIGHT_CYAN			"\x1b[96m"
 #define LIGHT_WHITE			"\x1b[97m"
 
-//FORMATS:
-#define FM_BOLD				"\x1b[1m"
-#define FM_BLINK			"\x1b[5m"
-#define FM_UNDERLINE		"\x1b[4m"
-#define FM_INVERT			"\x1b[7m"
-#define FM_LINE_THROUGH     "\x1b[9m"
-
-
-//BACKGROUNDS:
+//BACKGROUND COLORS:
 #define BG_BLACK			"\x1b[40m"
 #define BG_RED				"\x1b[41m"
 #define BG_GREEN			"\x1b[42m"
@@ -41,7 +41,6 @@
 #define BG_MAGENTA			"\x1b[45m"
 #define BG_CYAN				"\x1b[46m"
 #define BG_WHITE			"\x1b[47m"
-
 #define BG_LIGHT_RED		"\x1b[101m"
 #define BG_LIGHT_GREEN		"\x1b[102m"
 #define BG_LIGHT_YELLOW		"\x1b[103m"
